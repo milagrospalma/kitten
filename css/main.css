@@ -1,0 +1,54 @@
+.background {
+  background-size: cover;
+  background-position: center;
+}
+
+.cat-medium {
+  display: none;
+}
+
+.cat-small {
+  display: none;
+}
+
+.cat-large {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .background {
+    background-image: url('../assets/images/dawn.png');
+  }
+
+  .cat-large {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .background {
+    background-image: url('../assets/images/night.jpg');
+  }
+
+  .cat-medium {
+    display: none;
+  }
+
+  .cat-small {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .background {
+    background-image: url('../assets/images/sunny-day.jpg');
+  }
+
+  .cat-small {
+    display: none;
+  }
+
+  .cat-medium {
+    display: block;
+  }
+}
