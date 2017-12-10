@@ -1,18 +1,16 @@
 .background {
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 
-.cat-medium {
+.medium, .small, .large {
   display: none;
+  margin-top: 30%;
 }
 
-.cat-small {
-  display: none;
-}
-
-.cat-large {
-  display: none;
+img {
+  width: 80%;
 }
 
 @media (max-width: 767px) {
@@ -20,7 +18,7 @@
     background-image: url('../assets/images/dawn.png');
   }
 
-  .cat-large {
+  .large {
     display: block;
   }
 }
@@ -30,11 +28,7 @@
     background-image: url('../assets/images/night.jpg');
   }
 
-  .cat-medium {
-    display: none;
-  }
-
-  .cat-small {
+  .small {
     display: block;
   }
 }
@@ -44,11 +38,13 @@
     background-image: url('../assets/images/sunny-day.jpg');
   }
 
-  .cat-small {
+  .small {
     display: none;
   }
 
-  .cat-medium {
+  .medium {
     display: block;
+    margin-top: 20%;
+    margin-bottom: 5%;
   }
 }
